@@ -27,10 +27,9 @@ export const Products = () => {
     }, []) // Empty dependency array means this effect runs once on mount
 
     return (
-        <div className="min-h-screen bg-slate-950 py-16 text-white"> 
-            <h1>Products Page</h1>
-            <p>This is the products page of the website.</p>
-            <div className="flex flex-row flex-wrap gap-6 ">
+        <div className=""> 
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
                 {products.map((product) => (
                     <div key={product.id} className="border p-4 rounded bg-gray-100">
                         <img src={product.thumbnailUrl} alt={product.title} className="w-full h-auto mb-2 text-gray-800" />
