@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export const Dropdown = () =>{
     const options = ["option 1", "option 2", "option 3", "option 4", "option 5"];
