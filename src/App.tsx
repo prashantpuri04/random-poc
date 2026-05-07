@@ -13,7 +13,7 @@ import { SherryLogin } from './components/Sherry/components/Login.tsx'
 import store from './components/Sherry/utils/Store.tsx'
 import { Provider } from 'react-redux'
 import { Sidebar } from './components/Sherry/components/Sidebar.tsx'
-
+import { Products } from './components/Sherry/components/Products.tsx'
 
 function App() {
 
@@ -30,6 +30,7 @@ function App() {
         <Route path="/dropdown" element={<Dropdown />} />
 
         <Route path="/sherry" element={<Sherry />} />
+        <Route path="/sherry/products" element={<Products />} />
         <Route path="/sherry/about" element={<SherryAbout />} />
         <Route path="/sherry/login" element={<SherryLogin />} />
         <Route path="/Sidebar" element={<Sidebar />} />
